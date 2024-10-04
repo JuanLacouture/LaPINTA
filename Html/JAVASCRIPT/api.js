@@ -53,7 +53,7 @@ function renderCategory(plates, category, carouselId) {
     plateElement.classList.add("plato");
 
     // Se establece la URL de la imagen y se agrega un atributo data-src para lazy loading
-    const imageUrl = `/Imagenes/Menu/${plate.image}`;
+    const imageUrl = `Imagenes/Menu/${plate.image}`;
     plateElement.innerHTML = `
       <img class="lazyload" data-src="${imageUrl}" alt="${plate.name}">
       <p class="precio">${plate.price}</p>
