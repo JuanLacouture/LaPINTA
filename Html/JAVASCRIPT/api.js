@@ -60,10 +60,10 @@ function renderCategory(plates, category, carouselId) {
       <p class="nombre"><strong>${plate.name}</strong></p>
       <p class="descripcion">${plate.description}</p>
       <button class="add-to-cart" onclick="toggleDesplegable()" 
-              data-product='{"image":"/Imagenes/Menu/${plate.image}","name":"${
+              data-product='{"image":"Imagenes/Menu/${plate.image}","name":"${
       plate.name
     }","price":${parseFloat(plate.price.replace(/[^0-9.-]+/g, ""))}}'>
-        <img src="/Imagenes/Menu/carrito-icono.png" alt="Carrito">
+        <img src="Imagenes/Menu/carrito-icono.png" alt="Carrito">
         Añadir al carrito
       </button>
     `;
