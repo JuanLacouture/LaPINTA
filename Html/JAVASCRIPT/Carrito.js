@@ -21,12 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     cart.forEach((item) => {
+      const imageUrl = `${item.image}`;
       const cartItem = document.createElement("div");
       cartItem.className = "cart-item";
 
       cartItem.innerHTML = `
                 <div class="product">
-                    <img src="Imagenes/Menu/${item.image}" alt="${item.name}">
+                    <img class="lazyload" src="${imageUrl}" alt="${item.name}">
 
                     <p>${item.name}</p>
                 </div>
