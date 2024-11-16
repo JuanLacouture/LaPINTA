@@ -41,7 +41,7 @@ function renderCartItems() {
 
       itemElement.innerHTML = `
               <div class="item-details">
-                  <img src="${item.image}" alt="${item.name}">
+                  <img src="/Imagenes/${item.image}" alt="${item.name}">
                   <div>
                       <h2>${item.name}</h2>
                   </div>
