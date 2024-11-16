@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       cartItem.innerHTML = `
                 <div class="product">
-                    <img src="${item.image}" alt="${item.name}">
+                    <img src="Imagenes/Menu/${item.image}" alt="${item.name}">
+
                     <p>${item.name}</p>
                 </div>
                 <div class="quantity-container">
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("&");
 
     const paymentWindow = window.open(
-      `Html/pago.html?${queryString}`,
+      `Pago.html?${queryString}`,
       "_blank",
       "width=800,height=600"
     );
