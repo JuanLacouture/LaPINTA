@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       cartItem.innerHTML = `
                 <div class="product">
-                    <img src="/Imagenes/Menu/${item.image}" alt="${item.name}">
+                    <img src="Imagenes/Menu/${item.image}" alt="${item.name}">
 
                     <p>${item.name}</p>
                 </div>
