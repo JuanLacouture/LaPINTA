@@ -20,3 +20,17 @@ usernameInput.addEventListener('focus', handleFocus);
 usernameInput.addEventListener('blur', handleBlur);
 passwordInput.addEventListener('focus', handleFocus);
 passwordInput.addEventListener('blur', handleBlur);
+
+// Función para redirigir a la vista de administrador
+function redirectToAdmin() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Validación básica (puedes reemplazar con validaciones reales)
+    if (username !== '' && password !== '') {
+        // Redireccionar a la vista de administrador
+        window.location.href = 'admin.html';
+    } else {
+        alert('Por favor, ingresa tu usuario y contraseña.');
+    }
+}
