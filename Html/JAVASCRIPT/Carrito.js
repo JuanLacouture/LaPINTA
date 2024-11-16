@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("&");
 
     const paymentWindow = window.open(
-      `Html/pago.html?${queryString}`,
+      `Pago.html?${queryString}`,
       "_blank",
       "width=800,height=600"
     );
