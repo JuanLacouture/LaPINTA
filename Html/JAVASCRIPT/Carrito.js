@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     cart.forEach((item) => {
-      const imageUrl = `Imagenes/Menu/${image}`;
+      const imageUrl = `/${item.image}`;
       const cartItem = document.createElement("div");
       cartItem.className = "cart-item";
 
